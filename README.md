@@ -1,2 +1,2 @@
 # BRAIN-TUMOR
-we are using image processing to identify the tumor present in the brain
+We are using Image processing to identify the tumor present in the Brain
