@@ -5,6 +5,25 @@ This is our Solution for Data Science and AI track in HackOff v3.0. A web app th
 
 
 # Tools Used
-https://camo.githubusercontent.com/7adba513e360fc04d78fe10bb6d810150ce502fc692be52905f923385655c04d/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4a7570797465722532302d2532334633373632362e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d4a757079746572266c6f676f436f6c6f723d7768697465
-https://camo.githubusercontent.com/a71f1a20d58a3506dd5f32dcb31461bd5102a0bd33dbf49db9195c589eaca8d7/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f707974686f6e2532302d2532333134333534432e7376673f267374796c653d666f722d7468652d6261646765266c6f676f3d707974686f6e266c6f676f436f6c6f723d7768697465
+![image](https://user-images.githubusercontent.com/87629978/162562795-575c41ed-0922-48c7-85aa-6bc2c9c01dce.png)
+
+# About the Dataset
+The data set was taken from Kaggle which contains two folders, one is for training and the other is for testing. It has 3 types of Brain Tumor - Glioma, Meningioma and pituitary along with images of patients with no tumor.
+![image](https://user-images.githubusercontent.com/87629978/162562813-6e948f64-71af-4486-8813-17c2908a703a.png)
+
+Link to the Dataset - https://www.kaggle.com/sartajbhuvaji/brain-tumor-classification-mri
+
+# Goal and Idea
+The idea was to create a full stack application that would run on web and even on cellphones and can help people in diagnosing brain tumor using MRI scans. The classifier not only classifies between Tumor and No tumor but will also return the class of the Tumor if it is present. There were three categories of Tumor in our data - Pitutary, Glioma and Meningioma and depending upon the user input the model would give the user a result. The models are usually made but are rarely deployed so one of our goals for this hackathon was to learn how to deploy these models on the web and we were successful in doing so.
+
+# Working of the web app
+Upon landing on the page, the user is asked to input the image of the MRI scan. This image is then preprocessed to make it similar to the input on which the the model was initially trained. Once the processing is done, the image is fed to the model which then gives the user a result. The model that makes the predictions is a Convolutional Neural Network which consists of 5 Convolutional layers and 5 Maxpooling layers and it was trained on a batch size of 40 and for total of 50 epochs
+
+![image](https://user-images.githubusercontent.com/87629978/162562848-de819b23-3ee6-4f65-a5d0-f808e6347c4f.png)
+
+# Performance and Results
+Upon testing it on the web, the model was able to give some decent results. We tried inputing various images of different types of tumors to test it. For some of the inputs, it was able to give the right result but there were instances where it failed to classify the right type of tumor. But it did classify those images correctly which had Tumor even though it wasn't accurate in telling which type of tumor it was. The model gave an accuracy of 97.5% on the training set and an accuracy of 94% on the validation set.
+
+![image](https://user-images.githubusercontent.com/87629978/162562865-0981e28c-3f57-4ee0-8b5f-be5a87677055.png)
+
 
