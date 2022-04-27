@@ -1,7 +1,7 @@
 # Brain-Tumor-Detection-Web-app
 In the recent times, the requirement for better and advanced healthcare facilities has grown to a very large extent. With this Pandemic, we not only need better healthcare facilities to handle Covid-19 but we also need advanced methods to make other healthcare facilities and diagnostics faster. With Machine learning and Artificial Intelligence taking over almost everything, we decided to tackle one such issue related to the health sector using Deep learning Techniques.
 
-This is our Solution for Data Science and AI track in HackOff v3.0. A web app that helps in diagnosing whether a person has Brain Tumor or not by taking the MRI scan as the input from the user.
+This is our Solution for Data Science and AI . A web app that helps in diagnosing whether a person has Brain Tumor or not by taking the MRI scan as the input from the user.
 
 
 # Tools Used
